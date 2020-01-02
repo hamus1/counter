@@ -8,11 +8,11 @@ export default class Counter extends React.Component {
       };
     }
     
-    plus = () => ({
-        count:this.setState.count + 1
+    plus = () => this.setState({
+        count:this.state.count + 1
     });
-    mines = () => ({
-        count:this.setState.count - 1
+    mines = () => this.setState({
+        count:this.state.count - 1
     })
 
     render() {
