@@ -1,19 +1,21 @@
 import React from "react";
 
 export default class Counter extends React.Component {
-  render() {
       constructor(props) {
       super(props);
       this.state = {
           count: 0
       };
     }
+    
     plus = () => {
         this.setState.count + 1
     }
     mines = () => {
         this.setState.count - 1
     }
+    
+    render() {
 
     return (
     <div>
