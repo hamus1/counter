@@ -2,17 +2,18 @@ import React from "react";
 
 export default class Counter extends React.Component {
   render() {
-      constructor(props) 
+      constructor(props) {
       super(props);
-      this.State = {
-          count:0
+      this.state = {
+          count: 0
       };
-    
-    return 
+    }
+    return (
     <div>
         <button>plus</button>
-        <div></div>
+        <div>{this.state.count}</div>
         <button>mines</button>
-    </div>;
+    </div>
+    );
   }
 }
