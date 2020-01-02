@@ -8,11 +8,18 @@ export default class Counter extends React.Component {
           count: 0
       };
     }
+    plus = () => {
+        this.setState.count + 1
+    }
+    mines = () => {
+        this.setState.count - 1
+    }
+
     return (
     <div>
-        <button>plus</button>
+        <button onClick={this.plus}>plus</button>
         <div>{this.state.count}</div>
-        <button>mines</button>
+        <button onClick={this.mines}>mines</button>
     </div>
     );
   }
